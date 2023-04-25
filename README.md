@@ -13,8 +13,8 @@ A los equipos los vamos a modelar con un número del 0 al 100, que va representa
 Los partidos van a ser simulados de la siguiente forma: se dividen en 4 jugadas, y en cada jugada, puede meter gol algún equipo o ninguno. La probabilidad de que ocurra cada hecho está determinada por la efectividad de ambos equipos, y la cuenta es la siguiente:
 
 ```
-ProbabilidadGolA = EfectividadA * (1 - EfectividadB)
-ProbabilidadGolB = EfectividadB * (1 - EfectividadA)
+ProbabilidadGolA = EfectividadA/100 * (1 - EfectividadB/100)
+ProbabilidadGolB = EfectividadB/100 * (1 - EfectividadA/100)
 ProbabilidadSinGoles = 1 - ProbabilidadGolA - ProbabilidadGolB
 ```
 
