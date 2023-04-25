@@ -30,7 +30,7 @@ Asumiendo que la cantidad de equipos es una potencia de 2 (4,8,16,32,etc), se re
 
 1. Se simulan las 4 jugadas del partido
 2. Si no hay un ganador, se va a tiempo extra que son 2 jugadas más
-3. Si sigue sin haber ganador, se define por "gol de oro", es decir, se simula una jugada más hast algún equipo mete gol. 
+3. Si sigue sin haber ganador, se define por "gol de oro", es decir, se simula una jugada más hasta que algún equipo mete gol. 
 
 ## Experimentación
 
