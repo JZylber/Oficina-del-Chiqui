@@ -1,4 +1,8 @@
-#Función Auxiliar 1
+#Importo la librería random como rnd
+import random as rnd
+
+# Función Auxiliar 1
+# Esta función la usa goles
 # Toma dos equipos, que son una lista o tupla de dos elementos: el primero es el nombre del equipo y el segundo es la efectividad.
 # Devuelve una tupla de tres elementos: el primero es la probabilidad de que meta gol el equipo A, el segundo la probabilidad de que no haya goles y el tercero la probabilidad de que meta gol el equipo B.
 def probabilidades_de_gol(equipoA, equipoB):
@@ -12,6 +16,13 @@ def probabilidades_de_gol(equipoA, equipoB):
     empate = 1 - golA - golB
     return golA, empate, golB
 
+#Función Auxiliar 1
+# Toma dos equipos, que son una lista o tupla de dos elementos: el primero es el nombre del equipo y el segundo es la efectividad.
+# Devuelve A si mete gol A, B si mete gol B, E si no mete gol ninguno.
+def goles(equipoA,equipoB):
+    victoriaA, empate, victoriaB = probabilidades_de_gol(equipoA, equipoB)
+    resultado = rnd.choices(["A", "E", "B"], [victoriaA, empate, victoriaB])[0]
+    return(resultado)
 
 #Funcion Auxiliar 2
 #Esta función se usa en ordenar_tabla, ignorar
