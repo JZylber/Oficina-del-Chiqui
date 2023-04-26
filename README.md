@@ -18,7 +18,7 @@ ProbabilidadGolB = EfectividadB/100 * (1 - EfectividadA/100)
 ProbabilidadSinGoles = 1 - ProbabilidadGolA - ProbabilidadGolB
 ```
 
-No se enganchen demasiado con esto, hay una función auxiliar que lo resuelve, lo importante son como utilizar dichas probabilidades. El resultado del partido es la suma de las 4 jugadas.
+No se enganchen demasiado con esto, hay una función auxiliar que lo resuelve. El resultado del partido es la suma de las 4 jugadas.
 
 ## Campeonato
 
